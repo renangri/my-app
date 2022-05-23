@@ -20,24 +20,24 @@ const NavBar = () => {
 			<Container>
 				<Navbar.Brand>
 					<Link to="/">
-						<img alt="" height="50" class="text-decoration-none" />Inicio
+						<img alt="" height="50" className="text-decoration-none" />Inicio
 					</Link>
 				</Navbar.Brand>
 				<Navbar.Toggle aria-controls="responsive-navbar-nav" />
 				<Navbar.Collapse id="responsive-navbar-nav">
 					<Nav className="me-auto">
 						<Container >
-							<Link class="text-decoration-none" to="/about">Nosotros</Link>
+							<Link className="text-decoration-none" to="/about">Nosotros</Link>
 						</Container>
 
 						<Container>
-							<Link class="text-decoration-none"  to="/contact">Contacto</Link>
+							<Link className="text-decoration-none"  to="/contact">Contacto</Link>
 						</Container>
 						<Container>
 						<NavDropdown title="Productos" id="collasible-nav-dropdown">
 						
 							<NavDropdown.Item>
-								<Link class="text-decoration-none" className="Link" to="#">
+								<Link className="text-decoration-none Link" to="#">
 									Remeras
 								</Link>
 							</NavDropdown.Item>

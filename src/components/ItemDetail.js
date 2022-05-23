@@ -7,6 +7,13 @@ import ItemCount from "./ItemCount";
 const ItemDetail = (item) => {
   const [count, setCount] = useState(0);
 
+  const comprobarCont = ()=>{
+
+    console.log(count);
+  }
+
+
+
   return (
     <div className="itemDetail">
       <div className="theItems">
@@ -47,6 +54,7 @@ const ItemDetail = (item) => {
           <p> {item.items.details} </p>
         </Container>
       </div>
+      <button onClick={comprobarCont}> nko       </button>
     </div>
   );
 };
