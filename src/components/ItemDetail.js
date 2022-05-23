@@ -54,7 +54,7 @@ const ItemDetail = (item) => {
           <p> {item.items.details} </p>
         </Container>
       </div>
-      <button onClick={comprobarCont}> nko       </button>
+      
     </div>
   );
 };
