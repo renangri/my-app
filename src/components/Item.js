@@ -3,7 +3,7 @@ import { Card, Accordion } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import ItemCount from "./ItemCount";
 
-const Item = item => {
+const Item = (item )=> {
 	return (
 		<div className="items">
 			{/* estoy usando cards de react-bootstrap para los estilos, además, estoy

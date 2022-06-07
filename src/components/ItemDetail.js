@@ -7,13 +7,6 @@ import ItemCount from "./ItemCount";
 const ItemDetail = (item) => {
   const [count, setCount] = useState(0);
 
-  const comprobarCont = ()=>{
-
-    console.log(count);
-  }
-
-
-
   return (
     <div className="itemDetail">
       <div className="theItems">
@@ -42,7 +35,7 @@ const ItemDetail = (item) => {
               stock={item.items.stock}
               initial={item.items.initial}
             ></ItemCount>
-            <Link to={"cart"}>
+            <Link to={"Cart"}>
               <button type="button">Terminar mi compra</button>
             </Link>
           </Card.Body>
