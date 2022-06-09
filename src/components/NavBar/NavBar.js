@@ -24,7 +24,8 @@ const NavBar = () => {
 
   let totalQuantity = 0;
 
-  items.map((item) => (totalQuantity += item.quantity));
+  if (items.length > 0) items.map((item) => (totalQuantity += item.quantity));
+  if (items.lenght === 0) totalQuantity = 0;
 
   return (
     <Navbar

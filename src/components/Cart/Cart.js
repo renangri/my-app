@@ -1,6 +1,10 @@
 import React, { useContext } from "react";
 import { Table } from "react-bootstrap";
-import { FaTrash, FaRegArrowAltCircleLeft } from "react-icons/fa";
+import {
+  FaTrash,
+  FaRegArrowAltCircleLeft,
+  FaArrowCircleRight,
+} from "react-icons/fa";
 import { CartContext } from "../../Context/CartContext/CartContext";
 import { Link } from "react-router-dom";
 
@@ -56,6 +60,12 @@ const Cart = () => {
           </tbody>
         </Table>
       )}
+      <div>
+        <Link className="text-decoration-none" to="/shipping">
+          <FaArrowCircleRight className="h1" />
+          <h5>Ir a informacion del envio</h5>
+        </Link>
+      </div>
     </div>
   );
 };

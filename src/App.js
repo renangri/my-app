@@ -1,6 +1,6 @@
 // Imports
 import "./App.css";
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 //Components
@@ -10,6 +10,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Header from "./components/Header/Header";
 import Cart from "./components/Cart/Cart";
 import CategorySearch from "./components/CategorySearch/CategorySearch";
+import ShippingInfo from "./components/Shipping/ShippingInfo";
+import Orders from "./components/Orders/Orders";
+import ThanksPage from "./components/ThanksPage/ThanksPage";
 
 //Views
 import Home from "./views/Home";
@@ -34,6 +37,10 @@ function App() {
             <Route path="/detail/:id" element={<ItemDetailContainer />} />
             <Route path="/category/:category" element={<CategorySearch />} />
             <Route path="/cart" element={<Cart />} />
+            <Route path="/shipping" element={<ShippingInfo />} />
+            <Route path="/Orders" element={<Orders />} />
+            <Route path="/ThanksPage" element={<ThanksPage />} />
+
             <Route path="*" element={<NotFound />} />
           </Routes>
         </div>
